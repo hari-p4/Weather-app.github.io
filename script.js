@@ -5,9 +5,9 @@ const userInput = process.argv[2];
 geocode(userInput, (error, geodata) => {
 
     forecast(geodata.latitude, geodata.longitude, (error, data) => {
-        // console.log('Error', error);
-        console.log("GeoData", geodata);
-        console.log('Data', data);
+
+        console.log(geodata.place_name);
+        console.log(data);
     });
 
 });

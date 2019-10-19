@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hari-p4/weather-app.github.io/issues"
   },
-  "homepage": "https://github.com/hari-p4/weather-app.github.io#readme"
+  "homepage": "https://github.com/hari-p4/weather-app.github.io#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }

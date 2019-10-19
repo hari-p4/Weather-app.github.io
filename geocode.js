@@ -10,16 +10,16 @@ const geocode = (userInput, callback) => {
             callback("Problem with either URL or internet connection!!");
         }
         else
-        callback(undefined, {
-
-            longitude : response.body.features[0].center[0],
-            latitude : response.body.features[0].center[1]
-        })
+            callback(undefined, {
+                longitude: response.body.features[0].center[0],
+                latitude: response.body.features[0].center[1],
+                place_name: response.body.features[0].place_name
+            })
     });
-    
+
 }
 
 
-module.exports =  geocode
+module.exports = geocode
 
 
