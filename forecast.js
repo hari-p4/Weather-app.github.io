@@ -14,7 +14,9 @@ const forecast = (latitude, longitude, callback) => {
         }
 
         else {
-            callback(undefined, "It is " + response.body.currently.summary + " with a current tempreture of " + response.body.currently.temperature + " and chances of rain of " + response.body.currently.precipProbability + "%");
+            const TempFahrenheit = response.body.currently.temperature;
+            const TempCelsius = (TempFahrenheit - 32) * 5 / 9;
+            callback(undefined, "It is " + response.body.currently.summary + " with a current tempreture of " + TempCelsius + " Celsius and chances of rain of " + response.body.currently.precipProbability + "%");
         }
     });
 }
