@@ -1,0 +1,19 @@
+{
+  "name": "weather-app.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hari-p4/weather-app.github.io.git"
+  },
+  "author": "Hari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hari-p4/weather-app.github.io/issues"
+  },
+  "homepage": "https://github.com/hari-p4/weather-app.github.io#readme"
+}
