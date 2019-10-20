@@ -4,7 +4,7 @@ const request = require('request');
 const forecast = (latitude, longitude, callback) => {
 
     const forecastURL = "https://api.darksky.net/forecast/9048eeb6f17c485ebca86ea51abfe304/" + latitude + "," + longitude + "";
-    request({ url: forecastURL, json: true }, (error, response) => {
+    request( {url:forecastURL,  json: true }, (error, response) => {
 
         if (error) {
             callback(": Unable to connect to internet! Please check your internet connection", undefined);
